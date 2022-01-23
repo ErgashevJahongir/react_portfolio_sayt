@@ -21,9 +21,8 @@
     padding: 0;
     list-style-type: none;
     font-size: 30px;
-    /* font-weight: 300; */
     color: #fff;
-    width: 60%;
+    width: 70%;
 }
 
 .menu ul li {
@@ -39,4 +38,27 @@
     text-decoration: none;
     color: inherit;
     font-weight: 300;
+}
+
+.menu ul li a.social {
+    display: none;
+    font-size: 16px;
+}
+
+@media screen and (max-width: 700px) {
+    .menu ul li a.social {
+        display: inline-block;
+    }
+
+    .menu ul {
+        width: 80%;
+        font-size: 25px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .menu {
+        width: 100%;
+        right: -120%;
+    }
 }

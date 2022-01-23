@@ -1,3 +1,121 @@
+@import '../../global.css';
+
 .portfolio {
-    background-color: darkolivegreen;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.portfolio h1 {
+    font-size: 50px;
+    overflow-x: unset;
+    margin-bottom: 20px;
+}
+
+.portfolio ul {
+    padding: 0;
+    list-style: none;
+}
+
+.portfolio .container {
+    width: 90%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+
+.portfolio .container .item {
+    max-width: 350px;
+    max-height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    border-radius: 20px;
+    border: 1px solid rgb(240, 239, 239);
+    margin: 5px 10px;
+    overflow-x: unset;
+}
+
+.portfolio .container .item a {
+    max-width: 350px;
+    max-height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    transition: all 0.5s ease;
+    position: relative;
+    overflow-x: unset;
+}
+
+.portfolio .container .item h3 {
+    position: absolute;
+    font-size: 20px;
+}
+
+.portfolio .container .item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 1;
+    border-radius: 20px;
+}
+
+.portfolio .container .item:hover {
+    background-color: var(--mainColor);
+}
+
+.portfolio .container .item:hover img {
+    opacity: 0.3;
+    z-index: 0;
+}
+
+@media screen and (max-width: 900px) {
+    .portfolio h1 {
+        font-size: 35px;
+    }
+
+    .portfolio .container {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .portfolio h1 {
+        font-size: 25px;
+    }
+
+    .portfolio .container {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .portfolio .container .item {
+        margin: 5px auto;
+    }
+
+    .portfolio .container .item:last-child {
+        display: none;
+    }
+
+    .portfolio .container .item:nth-child(5n) {
+        display: none;
+    }
+
+    .portfolio .container .item:nth-child(3n) {
+        display: none;
+    }
+
+    .portfolio .container .item a {
+        max-height: 165px;
+    }
+
+    .portfolio .container .item img {
+        width: 85%;
+    }
 }

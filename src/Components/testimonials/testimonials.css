@@ -1,3 +1,280 @@
+@import '../../global.css';
+
 .testimonials {
-    background-color: saddlebrown;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
+
+.testimonials h1 {
+    font-size: 50px;
+}
+
+.testimonials .container {
+    width: 100%;
+    height: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.testimonials .container .card {
+    width: 250px;
+    height: 70%;
+    border-radius: 10px;
+    box-shadow: 0px 0px 15px -8px black;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 20px;
+    transition: all 1s ease;
+    text-align: center;
+}
+
+.testimonials .container .card.featured {
+    width: 300px;
+    height: 75%;
+    margin: 0 30px;
+}
+
+.testimonials .container .card:hover {
+    transform: scale(1.1);
+}
+
+.testimonials .container .card .top {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.testimonials .container .card .top img.left,
+.testimonials .container .card .top img.right {
+    height: 25px;
+}
+
+.testimonials .container .card .top img.user {
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin: 0 30px;
+}
+
+.testimonials .container .card .center {
+    padding: 10px;
+    border-radius: 10px;
+    background-color: rgb(250, 244, 245);
+}
+
+.testimonials .container .card .bottom {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.testimonials .container .card .bottom h3 {
+    margin-bottom: 5px;
+}
+
+.testimonials .container .card .bottom h4 {
+    color: rgb(121, 115, 115);
+}
+
+@media screen and (max-width: 800px) and (min-width: 550px) {
+    .testimonials h1 {
+        font-size: 30px;
+        overflow-x: unset;
+    }
+    .testimonials .container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        text-align: center;
+        height: 100%;
+    }
+
+    .testimonials .container .card {
+        height: 90%;
+        margin: 0 auto;
+    }
+
+    .testimonials .container .card.featured {
+        width: 250px;
+        height: 90%;
+        margin: 0 auto;
+    }
+
+    .testimonials .container .card .top img.user {
+        width: 30px;
+        height: 30px;
+    }
+
+    .testimonials .container .card .center {
+        font-size: 12px;
+        padding: 5px;
+    }
+
+    .testimonials .container .card .bottom h3 {
+        font-size: 14px;
+    }
+
+    .testimonials .container .card .bottom h4 {
+        font-size: 13px;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .testimonials h1 {
+        font-size: 20px;
+        overflow-x: unset;
+    }
+
+    .testimonials .container {
+        flex-direction: column;
+        height: 100%;
+    }
+
+    .testimonials .container .card {
+        width: 230px;
+        height: 180px;
+        margin: 10px 0;
+        text-align: center;
+    }
+
+    .testimonials .container .card.featured {
+        width: 250px;
+        height: 180px;
+        margin: 1px;
+    }
+
+    .testimonials .container .card .top img.user {
+        width: 30px;
+        height: 30px;
+    }
+
+    .testimonials .container .card .center {
+        font-size: 12px;
+        padding: 5px;
+    }
+
+    .testimonials .container .card .bottom h3 {
+        font-size: 14px;
+    }
+
+    .testimonials .container .card .bottom h4 {
+        font-size: 13px;
+    }
+}
+
+/* .testimonials {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    @include mobile {
+        justify-content: space-around;
+    } */
+
+/* .testimonials {
+        background-color: white;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    
+        h1 {
+            font-size: 50px;
+    
+            @include mobile {
+                font-size: 20px;
+            }
+        } */
+
+/* .container {
+            width: 100%;
+            height: 80%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+    }
+    
+            @include mobile {
+                flex-direction: column;
+                height: 100%;
+            } */
+
+/* 
+
+            .card {
+                width: 250px;
+                height: 70%;
+                border-radius: 10px;
+                box-shadow: 0px 0px 15px -8px black;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-around;
+                padding: 20px;
+                transition: all 1s ease;
+    } 
+                @include mobile {
+                    height: 180px;
+                    margin: 10px 0;
+                }
+    
+                &.featured {
+                    width: 300px;
+                    height: 75%;
+                    margin: 0 30px;
+    
+                    @include mobile {
+                        width: 250px;
+                        height: 180px;
+                        margin: 1px;
+                    }
+                }
+    
+                &:hover {
+                    transform: scale(1.1);
+                } */
+
+/* 
+                top img.user {
+                    height: 60px;
+                    width: 60px;
+                    border-radius: 50%;
+                    object-fit: cover;
+                    margin: 0 30px;
+}
+                    @include mobile {
+                        width: 30px;
+                        height: 30px;
+                    } */
+/* 
+
+                    .center {
+                        padding: 10px;
+                        border-radius: 10px;
+                        background-color: rgb(250, 244, 245);
+        
+                        @include mobile {
+                            font-size: 12px;
+                            padding: 5px;
+                        }
+                    } */
+
+/* 
+                    .testimonials .container .card .bottom h3 {
+                        margin-bottom: 5px;
+    }
+                        @include mobile {
+                            font-size: 14px;
+                        }
+                    }
+                    h4 {
+                        color: rgb(121, 115, 115);
+                        @include mobile {
+                            font-size: 13px;
+                        }
+                    } */

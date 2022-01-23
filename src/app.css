@@ -22,3 +22,14 @@
     height: calc(100vh - 70px);
     scroll-snap-align: start;
 }
+
+@media screen and (max-width: 700px) {
+    .app .sections {
+        height: calc(100vh - 50px);
+        top: 50px;
+    }
+
+    .app .sections > * {
+        height: calc(100vh - 50px);
+    }
+}

@@ -1,3 +1,163 @@
 .intro {
-    background-color: lightcoral;
+    background-color: white;
+    display: flex;
+}
+
+.intro .left {
+    flex: 0.5;
+    overflow: hidden;
+}
+
+.intro .left .imgContainer {
+    height: 700px;
+    background-color: yellowgreen;
+    border-radius: 50%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+.intro .left .imgContainer img {
+    height: 90%;
+    /* width: 100%; */
+}
+
+.intro .right {
+    flex: 0.5;
+    position: relative;
+}
+
+.intro .right .wrapper {
+    /* width: 100%; */
+    height: 100%;
+    padding-left: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.intro .right .wrapper h1 {
+    font-size: 60px;
+    margin: 10px 0;
+}
+
+.intro .right .wrapper h2 {
+    font-size: 35px;
+}
+
+.intro .right .wrapper h3 {
+    font-size: 30px;
+}
+
+.intro .right .wrapper h3 span {
+    font-size: inherit;
+    color: yellowgreen;
+}
+
+.intro .right .wrapper h3 .ityped-cursor {
+    animation: blink 1s infinite;
+}
+
+@keyframes blink {
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+.intro .right a {
+    position: absolute;
+    bottom: 10px;
+    left: 40%;
+}
+
+.intro .right a i {
+    font-size: 30px;
+    animation: arrowBlink 3s infinite;
+}
+
+@keyframes arrowBlink {
+    100% {
+        opacity: 0;
+    }
+}
+
+@media screen and (max-width: 1050px) {
+    .intro .right .wrapper h2 {
+        font-size: 30px;
+    }
+
+    .intro .right .wrapper h1 {
+        font-size: 50px;
+    }
+
+    .intro .right .wrapper h3 {
+        font-size: 25px;
+    }
+
+    .intro .left {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .intro .left .imgContainer {
+        height: 500px;
+    }
+
+    .intro .left .imgContainer img {
+        position: relative;
+        /* top: -80px; */
+        height: 80%;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .intro {
+        flex-direction: column;
+    }
+
+    .intro .right {
+        flex: 0.4;
+    }
+
+    .intro .left {
+        flex: 0.6;
+        display: block;
+    }
+
+    .intro .right a {
+        left: 49%;
+        bottom: 10px;
+    }
+
+    .intro .left .imgContainer {
+        height: 100vh;
+        align-items: start;
+    }
+
+    .intro .left .imgContainer img {
+        height: 57%;
+        /* position: relative; */
+        /* top: -110px; */
+    }
+
+    .intro .right .wrapper {
+        text-align: center;
+        padding-left: 0;
+    }
+
+    .intro .right .wrapper h2 {
+        font-size: 25px;
+    }
+
+    .intro .right .wrapper h1 {
+        font-size: 40px;
+    }
+
+    .intro .right .wrapper h3 {
+        font-size: 20px;
+    }
 }

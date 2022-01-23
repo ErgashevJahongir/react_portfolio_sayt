@@ -1,17 +1,17 @@
-import "./app.css";
-import Topbar from "./Components/topbar/topbar";
-import Testimonials from "./Components/testimonials/testimonials";
-import Intro from "./Components/intro/intro";
-import Contact from "./Components/contact/contact";
-import Portfolio from "./Components/portfolio/portfolio";
-import Works from "./Components/works/works";
-import { useState } from "react";
-import Menu from "./Components/menu/Menu";
+import Topbar from './Components/topbar/topbar';
+import Intro from './Components/intro/intro';
+import Portfolio from './Components/portfolio/portfolio';
+import Works from './Components/works/works';
+import Testimonials from './Components/testimonials/testimonials';
+import Contact from './Components/contact/contact';
+import './app.css';
+import { useState } from 'react';
+import Menu from './Components/menu/Menu';
 
 export default function App() {
     const [menuOpen, setMenuOpen] = useState(false);
     return (
-        <div className="app" id="app">
+        <div className="app">
             <Topbar menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
             <Menu menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
             <div className="sections">

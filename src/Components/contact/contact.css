@@ -1,3 +1,104 @@
+@import '../../global.css';
+
 .contact {
-    background-color: aquamarine;
+    background-color: white;
+    display: flex;
+}
+
+.contact .left {
+    flex: 1 1;
+    overflow: hidden;
+}
+
+.contact .left img {
+    height: 100%;
+    width: 100%;
+}
+
+.contact .right {
+    flex: 1 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact .right h2 {
+    font-size: 30px;
+}
+
+.contact .right form {
+    width: 80%;
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.contact .right form input {
+    width: 300px;
+    height: 30px;
+    font-size: 14px;
+}
+
+.contact .right form textarea {
+    width: 300px;
+    height: 200px;
+    font-size: 14px;
+}
+
+.contact .right form button {
+    width: 150px;
+    height: 30px;
+    color: white;
+    background-color: crimson;
+    border: none;
+    border-radius: 10px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.contact .right form button:focus {
+    outline: none;
+}
+
+.contact .right form span {
+    color: green;
+}
+
+@media screen and (max-width: 800px) {
+    .contact {
+        flex-direction: column;
+    }
+
+    .contact .right form {
+        width: 85%;
+    }
+
+    .contact .right form input {
+        width: 400px;
+        height: 20px;
+    }
+
+    .contact .right form textarea {
+        width: 400px;
+        height: 80px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .contact .right form {
+        width: 90%;
+    }
+
+    .contact .right form input {
+        width: 250px;
+        height: 20px;
+    }
+
+    .contact .right form textarea {
+        width: 250px;
+        height: 60px;
+    }
 }
