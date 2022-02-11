@@ -1,4 +1,3 @@
-import { Link } from '';
 import './menu.css';
 
 export default function Menu({ menuOpen, setMenuOpen }) {
@@ -21,10 +20,14 @@ export default function Menu({ menuOpen, setMenuOpen }) {
                     <a href="#contact">Contact</a>
                 </li>
                 <li>
-                    <Link className="social">jahongirergawev2@gmail.com</Link>
+                    <a href="#" className="social">
+                        jahongirergawev2@gmail.com
+                    </a>
                 </li>
                 <li>
-                    <Link className="social">+998 90 377 89 90</Link>
+                    <a href="#" className="social">
+                        +998 90 377 89 90
+                    </a>
                 </li>
             </ul>
         </div>
