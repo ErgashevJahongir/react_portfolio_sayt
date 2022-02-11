@@ -55,6 +55,7 @@
     flex-direction: column;
     justify-content: space-between;
     cursor: pointer;
+    overflow-x: unset;
 }
 
 .topbar .wrapper .right .hamburger span {
