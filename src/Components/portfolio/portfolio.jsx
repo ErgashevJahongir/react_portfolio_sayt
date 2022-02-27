@@ -22,31 +22,31 @@ export default function Portfolio() {
                 <li className="item">
                     <a href="https://joha-indicrop.netlify.app" target="_blank" rel="noopener noreferrer">
                         <img src="./assets/Indicorp.png" alt="portfolio sayt" />
-                        <h3>My Shop Internet Store</h3>
+                        <h3> Indicrop </h3>
                     </a>
                 </li>
                 <li className="item">
                     <a href="https://joha-storm-it-academy.netlify.app" target="_blank" rel="noopener noreferrer">
                         <img src="assets/storm-it.png" alt="portfolio sayt" />
-                        <h3>My Shop Internet Store</h3>
+                        <h3>Storm IT Academy</h3>
                     </a>
                 </li>
                 <li className="item">
                     <a href="https://joha-restaurantly.netlify.app" target="_blank" rel="noopener noreferrer">
                         <img src="assets/restaurantly.png" alt="portfolio sayt" />
-                        <h3>My Shop Internet Store</h3>
+                        <h3>Restaurantly</h3>
                     </a>
                 </li>
                 <li className="item">
                     <a href="https://joha-reading-club.netlify.app" target="_blank" rel="noopener noreferrer">
                         <img src="assets/reading-club.png" alt="portfolio sayt" />
-                        <h3>My Shop Internet Store</h3>
+                        <h3>Reading Club</h3>
                     </a>
                 </li>
                 <li className="item">
                     <a href="https://react-redux-todo-app-azure.vercel.app" target="_blank" rel="noopener noreferrer">
                         <img src="assets/redux-react.png" alt="portfolio sayt" />
-                        <h3>My Shop Internet Store</h3>
+                        <h3>React-redux To-Do app</h3>
                     </a>
                 </li>
             </ul>
