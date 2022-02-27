@@ -49,6 +49,7 @@
     transition: all 0.5s ease;
     position: relative;
     overflow-x: unset;
+    height: 100%;
 }
 
 .portfolio .container .item h3 {
